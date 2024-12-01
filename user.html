@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- https://github.com/mklarz/npst2024-scoreboard -->
+<title>NPST2024 - User history</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<script src="./static/jquery-3.6.0.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link href='static/style.css' rel='stylesheet'>
+</head>
+<body>
+<div id="title">NPST2024 - <span id="username">?</span></div>
+<div class="infoContainer">
+  <div class="info" style="width: 70%">
+    <div class="infoItem userInfo">
+      <div class="infoTitle">Score</div>
+      <div class="infoValue" id="userScore">?</div>
+    </div>
+    <div class="infoItem userInfo">
+      <div class="infoValue" id="userOrganization">ORG</div>
+    </div>
+    <div class="infoItem userInfo">
+      <div class="infoTitle">Solves</div>
+      <div class="infoValue" id="userSolves">?</div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="userDataContainer">
+<h1>Profile history</h1>
+  <table id="profileTable">
+    <thead>
+      <tr>
+        <th>Timestamp</th>
+        <th>Updated at</th>
+        <th>Valid from</th>
+        <th>Username</th>
+        <th>Organization</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
+<hr>
+<div class="userDataContainer">
+<h1>Scoreboard history</h3>
+  <table id="scoreboardTable">
+    <thead>
+      <tr>
+        <th>Timestamp</th>
+        <th>Last solve time</th>
+        <th>Username</th>
+        <th>Score</th>
+        <th>Solves</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
+<script>
+const ORGANIZATIONS = {
+  1: {
+    name: "NPST",
+    imagePath: "static/npst_280px.png",
+    imageSmallPath: "static/npst.png",
+  },
+  2: {
+    name: "NISM",
+    imagePath: "static/nism_280px.png",
+    imageSmallPath: "static/nism.png",
+  },
+  3: {
+    name: "KRIAPOS",
+    imagePath: "static/kriapos_280px.png",
+    imageSmallPath: "static/kriapos.png",
+  },
+}
+</script>
+<script>
+if (window.location.search) {
+  function addUserData(data) {
+    document.getElementById("username").textContent = data["current_info"]["username"];
+    document.getElementById("userScore").textContent = data["current_info"]["score"];
+    document.getElementById("userSolves").textContent = data["current_info"]["num_solves"];
+    organizationId = data["current_info"]["organization_id"];
+    if (organizationId !== null) {
+      document.getElementById("userOrganization").textContent = "";
+      const img = document.createElement("img");
+      img.src = ORGANIZATIONS[organizationId].imagePath;
+      img.width = 120;
+      img.title = ORGANIZATIONS[organizationId].name;
+      img.alt = ORGANIZATIONS[organizationId].name;
+      document.getElementById("userOrganization").appendChild(img);
+    }
+
+
+    var profileTable = document.getElementById("profileTable");
+    data["profile"].forEach((profile) => {
+      var profileRow = profileTable.insertRow(-1);
+
+      var timestampCell = profileRow.insertCell(0);
+      var updateAtCell = profileRow.insertCell(1);
+      var validFromCell = profileRow.insertCell(2);
+      var usernameCell = profileRow.insertCell(3);
+      var organizationCell = profileRow.insertCell(4);
+
+      timestampCell.innerText = profile["timestamp"];
+      updateAtCell.innerText = profile["data"]["updated_at"];
+      validFromCell.innerText = profile["data"]["valid_from"];
+      usernameCell.innerText = profile["data"]["username"];
+      var rowOrganizationId = profile["data"]["organization_id"];
+
+      if (rowOrganizationId !== null) {
+        if (rowOrganizationId in ORGANIZATIONS) {
+          const img = document.createElement("img");
+          img.src = ORGANIZATIONS[rowOrganizationId].imageSmallPath;
+          img.width = 40;
+          img.title = ORGANIZATIONS[rowOrganizationId].name;
+          img.alt = ORGANIZATIONS[rowOrganizationId].name;
+          organizationCell.appendChild(img);
+          organizationCell.className = "userRowWithOrganization";
+        } else {
+          organizationCell.innerText = organizationId;
+        }
+      }
+    });
+
+    var scoreboardTable = document.getElementById("scoreboardTable");
+    data["scoreboard"].forEach((scoreboard) => {
+      var scoreboardRow = scoreboardTable.insertRow(-1);
+
+      var timestampCell = scoreboardRow.insertCell(0);
+      var lastSolveTimeCell = scoreboardRow.insertCell(1);
+      var usernameCell = scoreboardRow.insertCell(2);
+      var scoreCell = scoreboardRow.insertCell(3);
+      var solvesCell = scoreboardRow.insertCell(4);
+
+      timestampCell.innerText = scoreboard["timestamp"];
+      lastSolveTimeCell.innerText = scoreboard["data"]["latest_solve_time"];
+      usernameCell.innerText = scoreboard["data"]["username"];
+      scoreCell.innerText = scoreboard["data"]["score"];
+      solvesCell.innerText = scoreboard["data"]["num_solves"];
+    })
+
+  }
+  params = new URLSearchParams(window.location.search);
+  user_id = params.get("id");
+  if (/^[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(user_id)) {
+    document.addEventListener('DOMContentLoaded', function () {
+      // it's a feature (tm)
+      $.getJSON(`./data/users/${user_id}.json`, addUserData);
+    });
+  }
+}
+</script>
+</body>
+</html>

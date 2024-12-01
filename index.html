@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- https://github.com/mklarz/npst2024-scoreboard -->
+<title>NPST2024 - Scoreboard</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link href='static/style.css' rel='stylesheet'>
+</head>
+<body>
+<div id="title">NPST2024</div>
+<div class="infoContainer">
+  <div class="info" style="width: 70%">
+    <div class="infoItem">
+      <div class="infoTitle">Registered users</div>
+      <div class="infoValue" id="registeredUsers">?</div>
+    </div>
+    <div class="infoItem">
+      <div class="infoTitle">Hidden users</div>
+      <div class="infoValue" id="hiddenUsers">?</div>
+    </div>
+    <div class="infoItem">
+      <div class="infoTitle">>=1 solve</div>
+      <div class="infoValue" id="atLeastOneSolveUsers">?</div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="infoContainer">
+  <div class="info" style="padding-top: 30px;">
+    <div class="infoItem">
+      <div class="infoTitle"><img class="organizationImage" src="static/npst_280px.png" /></div>
+      <div class="infoValue" id="npstUsers">?</div>
+    </div>
+    <div class="infoItem">
+      <div class="infoTitle"><img class="organizationImage" src="static/nism_280px.png" /></div>
+      <div class="infoValue" id="nismUsers">?</div>
+    </div>
+    <div class="infoItem">
+      <div class="infoTitle"><img class="organizationImage" src="static/kriapos_280px.png" /></div>
+      <div class="infoValue" id="kriaposUsers">?</div>
+    </div>
+  </div>
+</div>
+<hr>
+<div id="topUsers"></div>
+<div id="maxedUsers"></div>
+<hr>
+<div id="usersContainer">
+  <div id="users">
+    <table id="usersTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Valid from</th>
+          <th>Lasest solve</th>
+          <th>Username</th>
+          <th>Org.</th>
+          <th>Solves</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script src="./static/echarts-5.2.2.min.js" integrity="sha512-ivdGNkeO+FTZH5ZoVC4gS4ovGSiWc+6v60/hvHkccaMN2BXchfKdvEZtviy5L4xSpF8NPsfS0EVNSGf+EsUdxA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./static/jquery-3.6.0.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./static/theme.js" integirty="sha512-e5yUjHlsMcLwsXP8QBpfUofcbF3vG5oEbSiqvkTM/ShCzG7R9+HWBmQhI22nBXIq" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+const ORGANIZATIONS = {
+  1: {
+    name: "NPST",
+    imagePath: "static/npst.png",
+  },
+  2: {
+    name: "NISM",
+    imagePath: "static/nism.png",
+  },
+  3: {
+    name: "KRIAPOS",
+    imagePath: "static/kriapos.png",
+  },
+}
+</script>
+<script>
+var USERS = null;
+
+function addScoreboardData(data) {
+  document.getElementById("atLeastOneSolveUsers").innerText = data.length;
+  var userData = {};
+  data.forEach((user) => {
+    userData[user["user_id"]] = user;
+  })
+
+  var usersTable = document.getElementById("usersTable");
+  USERS.forEach((user) => {
+    var scoreboardUser = userData[user["id"]];
+    var latestSolve = "";
+    var solves = "";
+    var score = "";
+    if (scoreboardUser !== undefined) {
+      latestSolve = scoreboardUser["latest_solve_time"];
+      solves = scoreboardUser["num_solves"];
+      score = scoreboardUser["score"];
+    }
+
+    var userRow = usersTable.insertRow(-1);
+    userRow.setAttribute("data-user_id", user["id"]);
+    var idCell = userRow.insertCell(0);
+    var validFromCell = userRow.insertCell(1);
+    var latestSolveCell = userRow.insertCell(2);
+    var usernameCell = userRow.insertCell(3);
+    var organizationCell = userRow.insertCell(4);
+    var solvesCell = userRow.insertCell(5);
+    var scoreCell = userRow.insertCell(6);
+    idCell.innerText = user["id"];
+    validFromCell.innerText = user["valid_from"];
+    latestSolveCell.innerText = latestSolve;
+
+    if (user["organization_id"] !== null) {
+      if (user["organization_id"] in ORGANIZATIONS) {
+        const img = document.createElement("img");
+        img.src = ORGANIZATIONS[user["organization_id"]].imagePath;
+        img.width = 40;
+        img.title = ORGANIZATIONS[user["organization_id"]].name;
+        img.alt = ORGANIZATIONS[user["organization_id"]].name;
+        organizationCell.appendChild(img);
+        organizationCell.className = "userRowWithOrganization"; 
+      } else {
+        organizationCell.innerText = user["organization_id"];
+      }
+    }
+
+    solvesCell.innerText = solves;
+    scoreCell.innerText = score;
+    usernameCell.innerText = user["username"];
+  })
+  $('tr[data-user_id]').click(function(){
+      window.location = `user?id=${$(this).data('user_id')}`;
+      return false;
+  });
+}
+
+function addInfoData(data) {
+  document.getElementById("registeredUsers").textContent = data["registered_users"];
+  document.getElementById("hiddenUsers").textContent = data["hidden_users"];
+
+  
+  for (const [organizationId, userCount] of Object.entries(data["organizations"])) {
+    document.getElementById(`${ORGANIZATIONS[organizationId].name.toLowerCase()}Users`).textContent = userCount;
+  }
+
+  USERS = data["users"];
+}
+function addTopData(data) {
+  var chart = echarts.init(document.getElementById('topUsers'), 'dark');
+  chart.setOption({
+    title: {
+      left: 'center',
+        text: `NPST2024 - Top ${data.users.length} Users`
+    },
+    tooltip: {
+      order: 'valueDesc',
+      trigger: 'axis'
+    },
+    toolbox: {
+      feature: {
+        saveAsImage: {}
+      }
+    },
+    legend: {
+      bottom: 0,
+      show: true,
+      tooltip: {
+        show: true,
+        formatter: function(params) {
+          var user = data.users.find(user => user.name == params.name);
+          var last = user.data[user.data.length - 1][0]
+          return `<b>${params.name}</b><br>${last}`;
+        }
+      }
+    },
+    xAxis: {
+      type: 'time',
+    },
+    yAxis: {
+      type: 'value',
+      name: 'score'
+    },
+    series: data.users
+  });
+}
+function addMaxedData(data) {
+  // document.getElementById("maxedUsersCount").innerText = data[data.length - 1][1];
+  var newChallengeDaysData = [];
+  var noChallengeDaysData = [];
+  for (var d = new Date(Date.UTC(2024, 12, 1, 23)); d < new Date(Date.UTC(2023, 12, 25)); d.setDate(d.getDate() + 1)) {
+    var nextDate = new Date(d);
+    nextDate.setDate(nextDate.getDate() + 1);
+    if (d.getDay() == 1) {
+      noChallengeDaysData.push([
+        {
+          name: 'No new challenge',
+          xAxis: d.toISOString()
+        },
+        {
+          xAxis: nextDate.toISOString()
+        }
+      ])
+    } else {
+      // Monday
+      newChallengeDaysData.push([
+        {
+          // name: 'New challenge',
+          xAxis: d.toISOString(),
+          yAxis: 0
+        },
+        {
+          xAxis: d.toISOString(),
+          yAxis: 'max'
+        }
+      ])
+    }
+  }
+
+  var chart = echarts.init(document.getElementById('maxedUsers'), 'dark');
+  chart.setOption({
+    title: {
+      left: 'center',
+        text: 'NPST2024 - Users Maxed'
+    },
+    tooltip: {
+      order: 'valueDesc',
+      trigger: 'axis',
+      axisPointer: {
+        show: true,
+        type: 'cross',
+        label: {
+          formatter: function (params) {
+            var label = "";
+            if (params.axisDimension == "y") {
+                label = Math.floor(params.value);
+            } else {
+              label = echarts.format.formatTime("yyyy-MM-dd hh:mm:ss", params.value);
+            }
+            return label;
+          }
+        }
+      }
+    },
+    dataZoom: [
+      {
+        type: 'inside'
+      },
+      {
+        type: 'slider'
+      }
+    ],
+    toolbox: {
+      feature: {
+        saveAsImage: {}
+      }
+    },
+    xAxis: {
+      type: 'time',
+    },
+    yAxis: {
+      type: 'value',
+      name: 'users',
+    },
+    series: [{
+      name: 'Users maxed',
+      type: 'line',
+      showSymbol: false,
+      data: data,
+      markLine: {
+        symbol: ['none', 'none'],
+        lineStyle: {
+          color: 'rgba(255, 255, 255, 0.3)'
+        },
+        animation: false,
+        data: newChallengeDaysData
+      },
+      markArea: {
+        itemStyle: {
+          color: 'rgba(73, 146, 255, 0.1)'
+        },
+        data: noChallengeDaysData
+      }
+    }]
+  });
+}
+document.addEventListener('DOMContentLoaded', function () {
+  $.getJSON("./data/series.json", addTopData);
+  $.getJSON("./data/currently_maxed_users.json", addMaxedData);
+  $.getJSON("./data/info.json", addInfoData);
+
+  const scoreboardInterval = setInterval(function () {
+    if (USERS !== null) {
+      $.getJSON("./data/scoreboard.min.json", addScoreboardData);
+      clearInterval(scoreboardInterval);
+    }
+  }, 100);
+});
+</script>
+</body>
+</html>
