@@ -636,5 +636,27 @@
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
+    },
+    {
+        "pos": 59,
+        "account_id": 104,
+        "account_url": "/users/104",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "vaffern",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 60,
+        "account_id": 105,
+        "account_url": "/users/105",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "Hako2807",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
     }
 ]
