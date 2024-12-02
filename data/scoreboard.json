@@ -1340,5 +1340,60 @@
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
+    },
+    {
+        "pos": 123,
+        "account_id": 226,
+        "account_url": "/users/226",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "IggimodeV2",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 124,
+        "account_id": 224,
+        "account_url": "/users/224",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "noxon",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 125,
+        "account_id": 148,
+        "account_url": "/users/148",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "ctfrog",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 126,
+        "account_id": 146,
+        "account_url": "/users/146",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "tonelo",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 127,
+        "account_id": 225,
+        "account_url": "/users/225",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "WrathOfTheBacon",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
     }
 ]
