@@ -11,7 +11,6 @@ cd $SCRIPT_PATH # dirty
 source "$SCRIPT_PATH/.env"
 
 python3 ./fetch_data_ctfd.py "$CTFD_ACCESS_TOKEN"
-exit 0
 
 if [[ `git status --porcelain` ]]; then
   echo "There are differences, updating"
