@@ -559,5 +559,16 @@
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
+    },
+    {
+        "pos": 52,
+        "account_id": 24,
+        "account_url": "/users/24",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "pixel_viking",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
     }
 ]
