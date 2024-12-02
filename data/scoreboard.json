@@ -632,7 +632,7 @@
         "account_url": "/users/90",
         "account_type": "user",
         "oauth_id": null,
-        "name": "IamVictoria",
+        "name": "lagnavn",
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
@@ -1271,6 +1271,72 @@
         "account_type": "user",
         "oauth_id": null,
         "name": "endvet",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 117,
+        "account_id": 178,
+        "account_url": "/users/178",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "TPU",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 118,
+        "account_id": 217,
+        "account_url": "/users/217",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "Ompax",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 119,
+        "account_id": 219,
+        "account_url": "/users/219",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "FoxMaccloud",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 120,
+        "account_id": 212,
+        "account_url": "/users/212",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "jonnyshare",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 121,
+        "account_id": 215,
+        "account_url": "/users/215",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "Nordnorsken",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 122,
+        "account_id": 214,
+        "account_url": "/users/214",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "smyh",
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
