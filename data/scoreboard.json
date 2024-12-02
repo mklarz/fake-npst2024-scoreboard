@@ -680,5 +680,38 @@
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
+    },
+    {
+        "pos": 63,
+        "account_id": 124,
+        "account_url": "/users/124",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "bjomo",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 64,
+        "account_id": 123,
+        "account_url": "/users/123",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "kalfsborst",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 65,
+        "account_id": 113,
+        "account_url": "/users/113",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "EiGu",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
     }
 ]
