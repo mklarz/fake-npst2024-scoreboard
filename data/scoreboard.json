@@ -537,5 +537,27 @@
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
+    },
+    {
+        "pos": 50,
+        "account_id": 81,
+        "account_url": "/users/81",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "kokosn\u00f6tter",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 51,
+        "account_id": 72,
+        "account_url": "/users/72",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "sonycc",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
     }
 ]
