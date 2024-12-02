@@ -1,830 +1,519 @@
-{
-    "1": {
-        "id": 5,
+[
+    {
+        "pos": 1,
+        "account_id": 5,
         "account_url": "/users/5",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "unblvr",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 5,
-                "team_id": null,
-                "user_id": 5,
-                "value": 10,
-                "date": "2024-12-01T23:04:03.705844Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "2": {
-        "id": 4,
+    {
+        "pos": 2,
+        "account_id": 4,
         "account_url": "/users/4",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "NPST{aHR0cHM6Ly9zaG9ydHVybC5hdC9kTmxidw==}",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 4,
-                "team_id": null,
-                "user_id": 4,
-                "value": 10,
-                "date": "2024-12-01T23:06:11.023274Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "3": {
-        "id": 22,
+    {
+        "pos": 3,
+        "account_id": 22,
         "account_url": "/users/22",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "killi",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 22,
-                "team_id": null,
-                "user_id": 22,
-                "value": 10,
-                "date": "2024-12-01T23:07:57.111641Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "4": {
-        "id": 11,
+    {
+        "pos": 4,
+        "account_id": 11,
         "account_url": "/users/11",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "jungeltruls",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 11,
-                "team_id": null,
-                "user_id": 11,
-                "value": 10,
-                "date": "2024-12-01T23:08:45.300529Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "5": {
-        "id": 14,
+    {
+        "pos": 5,
+        "account_id": 14,
         "account_url": "/users/14",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "sofa_solver",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 14,
-                "team_id": null,
-                "user_id": 14,
-                "value": 10,
-                "date": "2024-12-01T23:09:07.931991Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "6": {
-        "id": 9,
+    {
+        "pos": 6,
+        "account_id": 9,
         "account_url": "/users/9",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "lokling",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 9,
-                "team_id": null,
-                "user_id": 9,
-                "value": 10,
-                "date": "2024-12-01T23:09:26.170876Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "7": {
-        "id": 20,
+    {
+        "pos": 7,
+        "account_id": 20,
         "account_url": "/users/20",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "TrossAlt",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 20,
-                "team_id": null,
-                "user_id": 20,
-                "value": 10,
-                "date": "2024-12-01T23:11:11.853911Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "8": {
-        "id": 17,
+    {
+        "pos": 8,
+        "account_id": 17,
         "account_url": "/users/17",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "nicw",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 17,
-                "team_id": null,
-                "user_id": 17,
-                "value": 10,
-                "date": "2024-12-01T23:11:14.522751Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "9": {
-        "id": 21,
+    {
+        "pos": 9,
+        "account_id": 21,
         "account_url": "/users/21",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "zanmat0",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 21,
-                "team_id": null,
-                "user_id": 21,
-                "value": 10,
-                "date": "2024-12-01T23:12:28.867732Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "10": {
-        "id": 26,
+    {
+        "pos": 10,
+        "account_id": 26,
         "account_url": "/users/26",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "LarsE",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 26,
-                "team_id": null,
-                "user_id": 26,
-                "value": 10,
-                "date": "2024-12-01T23:13:03.664874Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "11": {
-        "id": 25,
+    {
+        "pos": 11,
+        "account_id": 25,
         "account_url": "/users/25",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "josvik",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 25,
-                "team_id": null,
-                "user_id": 25,
-                "value": 10,
-                "date": "2024-12-01T23:17:32.087975Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "12": {
-        "id": 7,
+    {
+        "pos": 12,
+        "account_id": 7,
         "account_url": "/users/7",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "zup",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 7,
-                "team_id": null,
-                "user_id": 7,
-                "value": 10,
-                "date": "2024-12-01T23:17:59.306049Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "13": {
-        "id": 30,
+    {
+        "pos": 13,
+        "account_id": 30,
         "account_url": "/users/30",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "frening",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 30,
-                "team_id": null,
-                "user_id": 30,
-                "value": 10,
-                "date": "2024-12-01T23:18:36.882227Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "14": {
-        "id": 15,
+    {
+        "pos": 14,
+        "account_id": 15,
         "account_url": "/users/15",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "StateOfLimbo",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 15,
-                "team_id": null,
-                "user_id": 15,
-                "value": 10,
-                "date": "2024-12-01T23:18:46.828282Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "15": {
-        "id": 18,
+    {
+        "pos": 15,
+        "account_id": 18,
         "account_url": "/users/18",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "Lemos",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 18,
-                "team_id": null,
-                "user_id": 18,
-                "value": 10,
-                "date": "2024-12-01T23:19:45.129469Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "16": {
-        "id": 34,
+    {
+        "pos": 16,
+        "account_id": 34,
         "account_url": "/users/34",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "AHS",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 34,
-                "team_id": null,
-                "user_id": 34,
-                "value": 10,
-                "date": "2024-12-01T23:20:58.685415Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "17": {
-        "id": 10,
+    {
+        "pos": 17,
+        "account_id": 10,
         "account_url": "/users/10",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "tinius",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 10,
-                "team_id": null,
-                "user_id": 10,
-                "value": 10,
-                "date": "2024-12-01T23:23:18.681315Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "18": {
-        "id": 36,
+    {
+        "pos": 18,
+        "account_id": 36,
         "account_url": "/users/36",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "pwnd4",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 36,
-                "team_id": null,
-                "user_id": 36,
-                "value": 10,
-                "date": "2024-12-01T23:28:02.737107Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "19": {
-        "id": 13,
+    {
+        "pos": 19,
+        "account_id": 13,
         "account_url": "/users/13",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "marky_mark",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 13,
-                "team_id": null,
-                "user_id": 13,
-                "value": 10,
-                "date": "2024-12-01T23:29:16.349941Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "20": {
-        "id": 40,
+    {
+        "pos": 20,
+        "account_id": 40,
         "account_url": "/users/40",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "Sithis",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 40,
-                "team_id": null,
-                "user_id": 40,
-                "value": 10,
-                "date": "2024-12-01T23:39:20.320215Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "21": {
-        "id": 41,
+    {
+        "pos": 21,
+        "account_id": 41,
         "account_url": "/users/41",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "j0rn",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 41,
-                "team_id": null,
-                "user_id": 41,
-                "value": 10,
-                "date": "2024-12-01T23:39:35.789919Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "22": {
-        "id": 37,
+    {
+        "pos": 22,
+        "account_id": 37,
         "account_url": "/users/37",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "Laudianer",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 37,
-                "team_id": null,
-                "user_id": 37,
-                "value": 10,
-                "date": "2024-12-01T23:41:56.688632Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "23": {
-        "id": 42,
+    {
+        "pos": 23,
+        "account_id": 42,
         "account_url": "/users/42",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "Blixat",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 42,
-                "team_id": null,
-                "user_id": 42,
-                "value": 10,
-                "date": "2024-12-01T23:45:44.001457Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "24": {
-        "id": 35,
+    {
+        "pos": 24,
+        "account_id": 35,
         "account_url": "/users/35",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "kristians",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 35,
-                "team_id": null,
-                "user_id": 35,
-                "value": 10,
-                "date": "2024-12-01T23:53:20.267968Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "25": {
-        "id": 27,
+    {
+        "pos": 25,
+        "account_id": 27,
         "account_url": "/users/27",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "haavana",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 27,
-                "team_id": null,
-                "user_id": 27,
-                "value": 10,
-                "date": "2024-12-01T23:55:56.585324Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "26": {
-        "id": 29,
+    {
+        "pos": 26,
+        "account_id": 29,
         "account_url": "/users/29",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "C",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 29,
-                "team_id": null,
-                "user_id": 29,
-                "value": 10,
-                "date": "2024-12-02T00:03:38.353931Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "27": {
-        "id": 23,
+    {
+        "pos": 27,
+        "account_id": 23,
         "account_url": "/users/23",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "hashy",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 23,
-                "team_id": null,
-                "user_id": 23,
-                "value": 10,
-                "date": "2024-12-02T00:04:56.557330Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "28": {
-        "id": 48,
+    {
+        "pos": 28,
+        "account_id": 48,
         "account_url": "/users/48",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "Joey",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 48,
-                "team_id": null,
-                "user_id": 48,
-                "value": 10,
-                "date": "2024-12-02T00:05:28.289927Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "29": {
-        "id": 44,
+    {
+        "pos": 29,
+        "account_id": 44,
         "account_url": "/users/44",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "4LT3R_3GO",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 44,
-                "team_id": null,
-                "user_id": 44,
-                "value": 10,
-                "date": "2024-12-02T00:09:17.959090Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "30": {
-        "id": 49,
+    {
+        "pos": 30,
+        "account_id": 49,
         "account_url": "/users/49",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "PizzaGutt",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 49,
-                "team_id": null,
-                "user_id": 49,
-                "value": 10,
-                "date": "2024-12-02T00:12:21.146011Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "31": {
-        "id": 53,
+    {
+        "pos": 31,
+        "account_id": 53,
         "account_url": "/users/53",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "Bop",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 53,
-                "team_id": null,
-                "user_id": 53,
-                "value": 10,
-                "date": "2024-12-02T00:22:03.410751Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "32": {
-        "id": 63,
+    {
+        "pos": 32,
+        "account_id": 63,
         "account_url": "/users/63",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "KristianBP",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 63,
-                "team_id": null,
-                "user_id": 63,
-                "value": 10,
-                "date": "2024-12-02T00:22:10.900789Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "33": {
-        "id": 56,
+    {
+        "pos": 33,
+        "account_id": 56,
         "account_url": "/users/56",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "Wazzah",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 56,
-                "team_id": null,
-                "user_id": 56,
-                "value": 10,
-                "date": "2024-12-02T00:23:48.887812Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "34": {
-        "id": 64,
+    {
+        "pos": 34,
+        "account_id": 64,
         "account_url": "/users/64",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "1337_einar",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 64,
-                "team_id": null,
-                "user_id": 64,
-                "value": 10,
-                "date": "2024-12-02T00:29:50.758167Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "35": {
-        "id": 61,
+    {
+        "pos": 35,
+        "account_id": 61,
         "account_url": "/users/61",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "maggyJuicy",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 61,
-                "team_id": null,
-                "user_id": 61,
-                "value": 10,
-                "date": "2024-12-02T00:30:46.035352Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "36": {
-        "id": 51,
+    {
+        "pos": 36,
+        "account_id": 51,
         "account_url": "/users/51",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "p\u00f8rnflakes",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 51,
-                "team_id": null,
-                "user_id": 51,
-                "value": 10,
-                "date": "2024-12-02T00:34:11.928518Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "37": {
-        "id": 43,
+    {
+        "pos": 37,
+        "account_id": 43,
         "account_url": "/users/43",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "nitrobit",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 43,
-                "team_id": null,
-                "user_id": 43,
-                "value": 10,
-                "date": "2024-12-02T00:34:46.061190Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "38": {
-        "id": 69,
+    {
+        "pos": 38,
+        "account_id": 69,
         "account_url": "/users/69",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "sandercool",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 69,
-                "team_id": null,
-                "user_id": 69,
-                "value": 10,
-                "date": "2024-12-02T00:34:48.011340Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "39": {
-        "id": 55,
+    {
+        "pos": 39,
+        "account_id": 55,
         "account_url": "/users/55",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "knutegil.dev",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 55,
-                "team_id": null,
-                "user_id": 55,
-                "value": 10,
-                "date": "2024-12-02T00:35:56.890990Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "40": {
-        "id": 71,
+    {
+        "pos": 40,
+        "account_id": 71,
         "account_url": "/users/71",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "BobTheShoplifter",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 71,
-                "team_id": null,
-                "user_id": 71,
-                "value": 10,
-                "date": "2024-12-02T00:37:01.076665Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "41": {
-        "id": 54,
+    {
+        "pos": 41,
+        "account_id": 54,
         "account_url": "/users/54",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "vasaas1",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 54,
-                "team_id": null,
-                "user_id": 54,
-                "value": 10,
-                "date": "2024-12-02T00:44:16.517548Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "42": {
-        "id": 65,
+    {
+        "pos": 42,
+        "account_id": 65,
         "account_url": "/users/65",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "cyberg",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 65,
-                "team_id": null,
-                "user_id": 65,
-                "value": 10,
-                "date": "2024-12-02T00:49:29.742538Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "43": {
-        "id": 68,
+    {
+        "pos": 43,
+        "account_id": 68,
         "account_url": "/users/68",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "oscr",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 68,
-                "team_id": null,
-                "user_id": 68,
-                "value": 10,
-                "date": "2024-12-02T00:49:46.095667Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "44": {
-        "id": 75,
+    {
+        "pos": 44,
+        "account_id": 75,
         "account_url": "/users/75",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "lurk",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 75,
-                "team_id": null,
-                "user_id": 75,
-                "value": 10,
-                "date": "2024-12-02T00:50:30.767995Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "45": {
-        "id": 76,
+    {
+        "pos": 45,
+        "account_id": 76,
         "account_url": "/users/76",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "eirik",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 76,
-                "team_id": null,
-                "user_id": 76,
-                "value": 10,
-                "date": "2024-12-02T00:51:34.893392Z"
-            }
-        ]
+        "bracket_name": null
     },
-    "46": {
-        "id": 39,
+    {
+        "pos": 46,
+        "account_id": 39,
         "account_url": "/users/39",
+        "account_type": "user",
+        "oauth_id": null,
         "name": "radagast",
         "score": 10,
         "bracket_id": null,
-        "bracket_name": null,
-        "solves": [
-            {
-                "challenge_id": 1,
-                "account_id": 39,
-                "team_id": null,
-                "user_id": 39,
-                "value": 10,
-                "date": "2024-12-02T00:56:16.587197Z"
-            }
-        ]
+        "bracket_name": null
+    },
+    {
+        "pos": 47,
+        "account_id": 79,
+        "account_url": "/users/79",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "vanNeuter",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
     }
-}
+]
