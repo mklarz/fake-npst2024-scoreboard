@@ -14,7 +14,8 @@ s.headers["Authorization"] = f"Token {CTFD_ACCESS_TOKEN}"
 
 def get_scoreboard():
     try:
-        r = s.get(f"{CTFD_URL}/api/v1/scoreboard/top/10000")
+        #r = s.get(f"{CTFD_URL}/api/v1/scoreboard/top/10000")
+        r = s.get(f"{CTFD_URL}/api/v1/scoreboard")
         return r.json().get("data", None)
     except Exception as e:
         traceback.print_exception()
