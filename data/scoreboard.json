@@ -603,5 +603,38 @@
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
+    },
+    {
+        "pos": 56,
+        "account_id": 92,
+        "account_url": "/users/92",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "Aeolus",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 57,
+        "account_id": 93,
+        "account_url": "/users/93",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "MrFreddi007",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 58,
+        "account_id": 90,
+        "account_url": "/users/90",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "IamVictoria",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
     }
 ]
