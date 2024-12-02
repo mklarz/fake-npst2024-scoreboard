@@ -570,5 +570,16 @@
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
+    },
+    {
+        "pos": 53,
+        "account_id": 85,
+        "account_url": "/users/85",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "magnus",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
     }
 ]
