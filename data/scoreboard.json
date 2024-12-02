@@ -515,5 +515,27 @@
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
+    },
+    {
+        "pos": 48,
+        "account_id": 82,
+        "account_url": "/users/82",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "Hakkespetten",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 49,
+        "account_id": 83,
+        "account_url": "/users/83",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "apoollon",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
     }
 ]
