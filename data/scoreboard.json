@@ -713,5 +713,126 @@
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
+    },
+    {
+        "pos": 66,
+        "account_id": 120,
+        "account_url": "/users/120",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "Morthius",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 67,
+        "account_id": 114,
+        "account_url": "/users/114",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "mindworks",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 68,
+        "account_id": 132,
+        "account_url": "/users/132",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "Amundfa",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 69,
+        "account_id": 135,
+        "account_url": "/users/135",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "Joachim",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 70,
+        "account_id": 125,
+        "account_url": "/users/125",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "golden",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 71,
+        "account_id": 138,
+        "account_url": "/users/138",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "sakarl",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 72,
+        "account_id": 134,
+        "account_url": "/users/134",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "7h3dr3am",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 73,
+        "account_id": 33,
+        "account_url": "/users/33",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "Norse",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 74,
+        "account_id": 136,
+        "account_url": "/users/136",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "Cannizzo",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 75,
+        "account_id": 133,
+        "account_url": "/users/133",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "nub",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 76,
+        "account_id": 140,
+        "account_url": "/users/140",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "Gondolf",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
     }
 ]
