@@ -676,7 +676,7 @@
         "account_url": "/users/118",
         "account_type": "user",
         "oauth_id": null,
-        "name": "Operat\u00f8r 1",
+        "name": "Niss1",
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
@@ -1886,7 +1886,18 @@
         "account_url": "/users/252",
         "account_type": "user",
         "oauth_id": null,
-        "name": "Oohsmile",
+        "name": "Oohsmile\ud83c\udff4\u200d\u2620\ufe0f",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 173,
+        "account_id": 190,
+        "account_url": "/users/190",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "nordbo",
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
