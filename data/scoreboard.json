@@ -676,7 +676,7 @@
         "account_url": "/users/118",
         "account_type": "user",
         "oauth_id": null,
-        "name": "MikeyBoy",
+        "name": "Operat\u00f8r 1",
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
@@ -1018,6 +1018,61 @@
         "account_type": "user",
         "oauth_id": null,
         "name": "10namarie",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 94,
+        "account_id": 173,
+        "account_url": "/users/173",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "Cinaed",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 95,
+        "account_id": 174,
+        "account_url": "/users/174",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "swiftiepoo",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 96,
+        "account_id": 137,
+        "account_url": "/users/137",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "DarthKevin",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 97,
+        "account_id": 103,
+        "account_url": "/users/103",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "Cryptix",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 98,
+        "account_id": 177,
+        "account_url": "/users/177",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "ReodorFelgen",
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
