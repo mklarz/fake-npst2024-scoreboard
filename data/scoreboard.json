@@ -291,7 +291,7 @@
         "account_url": "/users/23",
         "account_type": "user",
         "oauth_id": null,
-        "name": "hashy",
+        "name": "Maydew",
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
@@ -1260,6 +1260,17 @@
         "account_type": "user",
         "oauth_id": null,
         "name": "Da Man",
+        "score": 10,
+        "bracket_id": null,
+        "bracket_name": null
+    },
+    {
+        "pos": 116,
+        "account_id": 208,
+        "account_url": "/users/208",
+        "account_type": "user",
+        "oauth_id": null,
+        "name": "endvet",
         "score": 10,
         "bracket_id": null,
         "bracket_name": null
